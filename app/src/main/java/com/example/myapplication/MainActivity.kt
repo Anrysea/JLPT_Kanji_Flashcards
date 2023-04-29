@@ -23,5 +23,18 @@ class MainActivity : AppCompatActivity() {
         // Здесь вы можете устанавливать кандзи и описание динамически
         binding.kanjiText.text = "漢字"
         binding.kanjiDescription.text = "описание, значение"
+
+
+        val word1 = findViewById(R.id.word1) as FuriganaTextView?
+        word1!!.setFuriganaText("通<ruby>学<rt>がく</rt></ruby> (путь в школу)")
+
+        val word2 = findViewById(R.id.word2) as FuriganaTextView?
+        word2!!.setFuriganaText("通<ruby>信<rt>しん</rt></ruby> (связь)")
+
+        val word3 = findViewById(R.id.word3) as FuriganaTextView?
+        word3!!.setFuriganaText("通<ruby>り<rt>とお</rt></ruby> (улица)")
+
+        val word4 = findViewById(R.id.word4) as FuriganaTextView?
+        word4!!.setFuriganaText("通<ruby>常<rt>じょう</rt></ruby> (обычный)")
     }
 }

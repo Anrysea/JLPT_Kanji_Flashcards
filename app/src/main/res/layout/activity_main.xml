@@ -30,4 +30,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/kanji_text" />
 
+    <LinearLayout
+        android:id="@+id/wordsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kanji_description">
+
+        <com.example.myapplication.FuriganaTextView
+            android:id="@+id/word2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通&lt;ruby&gt;信&lt;rt&gt;しん&lt;/rt&gt;&lt;/ruby&gt; (связь)"
+            android:textSize="18sp"
+            app:contains_ruby_tags="true" />
+
+        <com.example.myapplication.FuriganaTextView
+            android:id="@+id/word1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contains_ruby_tags="true"
+            android:text="通&lt;ruby&gt;学&lt;rt&gt;がく&lt;/rt&gt;&lt;/ruby&gt; (путь в школу)"
+            android:textSize="18sp" />
+
+        <com.example.myapplication.FuriganaTextView
+            android:id="@+id/word3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通&lt;ruby&gt;り&lt;rt&gt;とお&lt;/rt&gt;&lt;/ruby&gt; (улица)"
+            android:textSize="18sp"
+            app:contains_ruby_tags="true" />
+
+        <com.example.myapplication.FuriganaTextView
+            android:id="@+id/word4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通&lt;ruby&gt;常&lt;rt&gt;じょう&lt;/rt&gt;&lt;/ruby&gt; (обычный)"
+            android:textSize="18sp"
+            app:contains_ruby_tags="true" />
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
