@@ -1,0 +1,12 @@
+<com.example.myapplication.FuriganaTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/furiganaTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;ruby&gt;一&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;つ"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@color/white"
+    android:textSize="24sp"
+    app:contains_ruby_tags="true"
+    app:furigana_text_color="@color/black" />

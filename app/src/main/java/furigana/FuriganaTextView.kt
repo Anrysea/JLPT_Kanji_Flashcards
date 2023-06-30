@@ -17,6 +17,8 @@ import java.util.*
 
 class FuriganaTextView : androidx.appcompat.widget.AppCompatTextView {
 
+
+
     // Paints
     private var textPaintFurigana = TextPaint()
     private var textPaintNormal = TextPaint()
@@ -34,7 +36,7 @@ class FuriganaTextView : androidx.appcompat.widget.AppCompatTextView {
 
     //attributes
     private var hasRuby: Boolean = false
-    private var furiganaTextColor: Int = 0
+    var furiganaTextColor: Int = 0
 
     // Constructors
     constructor(context: Context) : super(context) {
@@ -83,6 +85,8 @@ class FuriganaTextView : androidx.appcompat.widget.AppCompatTextView {
     fun setFuriganaText(text: String) {
         setFuriganaText(text, hasRuby = false)
     }
+
+
 
     fun setFuriganaText(text: String, hasRuby: Boolean) {
         super.setText(text)

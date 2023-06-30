@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/grey_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="1"
+        android:textSize="18sp"
+        android:backgroundTint="@color/grey"/>
+
+    <Button
+        android:id="@+id/red_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="2"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorRed"/>
+
+    <Button
+        android:id="@+id/orange_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="3"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorYellow"/>
+
+    <Button
+        android:id="@+id/green_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="4"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorGreen"/>
+
+    <Button
+        android:id="@+id/blue_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="5"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorBlue"/>
+</LinearLayout>

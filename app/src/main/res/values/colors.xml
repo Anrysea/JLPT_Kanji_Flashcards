@@ -3,4 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey">#757575</color> <!-- Dark Grey -->
+    <color name="colorRed">#E53935</color> <!-- Red -->
+    <color name="colorYellow">#FB8C00</color> <!-- Orange -->
+    <color name="colorGreen">#43A047</color> <!-- Green -->
+    <color name="colorBlue">#64B5F6</color> <!-- Light Blue -->
 </resources>
