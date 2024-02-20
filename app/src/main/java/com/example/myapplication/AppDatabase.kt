@@ -8,6 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Kanji::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun kanjiDao(): KanjiDao
+
     companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null
@@ -19,6 +20,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "kanji_database"
                 )
+                    .createFromAsset("kanji.db")
                     .fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance

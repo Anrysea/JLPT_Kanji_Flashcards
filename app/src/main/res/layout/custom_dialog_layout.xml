@@ -5,6 +5,15 @@
     android:orientation="vertical">
 
     <Button
+        android:id="@+id/purple_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="learning"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorPur"/>
+
+    <Button
         android:id="@+id/grey_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
