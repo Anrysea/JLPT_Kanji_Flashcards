@@ -195,7 +195,7 @@ class MainActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.IO).launch {
             mutex.withLock {
                 updateKanjiGroopAndPlace(kanjiDao, getCard(), groupNumber)
-                if (getMode() == 0){
+                if (getMode() == 6){
 
                     withContext(Dispatchers.Main) {
                         findMinPlaceKanji(kanjiDao, select())?.let { chosenCard = it }
@@ -392,7 +392,7 @@ class MainActivity : AppCompatActivity() {
             CoroutineScope(Dispatchers.IO).launch {
                 val minPlaceId: Int?
 
-                if (mode != null) {
+                if (mode != 6) {
                     minPlaceId = findMinPlaceKanji(kanjiDao, getMode())
                 } else {
                     Log.d("ыфв", select().toString())
@@ -453,7 +453,7 @@ class MainActivity : AppCompatActivity() {
         setupButton(dialog, R.id.orange_button, 3)
         setupButton(dialog, R.id.green_button, 4)
         setupButton(dialog, R.id.blue_button, 5)
-        setupButton(dialog, R.id.purple_button)
+        setupButton(dialog, R.id.purple_button, 6)
         dialog.show()
     }
 
